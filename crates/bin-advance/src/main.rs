@@ -140,10 +140,37 @@
 
 
 //tuple
+// fn dissplay_coordinate(coordinate: (i32, i32)){
+//     let (x,y) = coordinate;
+//     if y >5{
+//         println!("Greater than 5");
+//     } else if y < 5 {
+//         println!("less than 5");
+//     }
+//     else if y == 5 {
+//         println!("equaln 5");
+//     }
+// }
 
+
+// fn main(){
+//     let (x,y) = (5,6);
+//     let coor = (5,6);
+//     let coordinate = (1,17);
+//     dissplay_coordinate(coordinate);
+//     }
+
+fn check_value(big: bool){
+    match big {
+        true => println!("it's big"),
+        false => println!("it's small"),
+
+    }
+}
 
 
 fn main(){
-    let (x,y) = (5,6);
-    let coor = (5,6);
+    let my_num = 11;
+    let big = my_num < 100;
+    check_value(big);
 }
