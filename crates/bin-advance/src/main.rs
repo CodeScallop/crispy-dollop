@@ -160,17 +160,37 @@
 //     dissplay_coordinate(coordinate);
 //     }
 
-fn check_value(big: bool){
-    match big {
-        true => println!("it's big"),
-        false => println!("it's small"),
+// fn check_value(big: bool){
+//     match big {
+//         true => println!("it's big"),
+//         false => println!("it's small"),
+
+//     }
+// }
+
+
+// fn main(){
+//     let my_num = 11;
+//     let big = my_num < 100;
+//     check_value(big);
+// }
+
+
+//ownership
+
+enum Light{
+    Bright,
+    Dull
+}
+fn display_light(light: Light){
+    match light {
+        Light::Bright => println!("Bringt"),
+        Light::Dull => println!("Dull"),
 
     }
+
 }
-
-
 fn main(){
-    let my_num = 11;
-    let big = my_num < 100;
-    check_value(big);
+    let dull = Light::Dull;
+    display_light(dull);
 }
