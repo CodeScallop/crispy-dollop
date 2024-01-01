@@ -178,20 +178,37 @@
 
 //ownership
 
-enum Light{
-    Bright,
-    Dull
-}
-fn display_light(light: &Light){
-    match light {
-        Light::Bright => println!("Bringt"),
-        Light::Dull => println!("Dull"),
+// enum Light{
+//     Bright,
+//     Dull
+// }
+// fn display_light(light: &Light){
+//     match light {
+//         Light::Bright => println!("Bringt"),
+//         Light::Dull => println!("Dull"),
 
-    }
+//     }
+
+// }
+// fn main(){
+//     let dull = Light::Dull;
+//     display_light(&dull);
+//     display_light(&dull);
+// }
+struct Grocery_item{
+    id: i32,
+    quantity: i32,
 
 }
+
+fn display_id(grocery: &Grocery_item){
+    println!("{:?}", grocery.id)
+}
+
+fn display_quantity(grocery: &Grocery_item){
+    println!("{:?}", grocery.quantity)
+}
+
 fn main(){
-    let dull = Light::Dull;
-    display_light(&dull);
-    display_light(&dull);
+    let grocery = Grocery_item { id: {5},quantity{5},};
 }
