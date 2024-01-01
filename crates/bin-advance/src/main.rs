@@ -370,6 +370,7 @@
 //     Blue,
 //     White,
 // }
+<<<<<<< HEAD
 
 // impl Colors {
 //     fn print(&self){
@@ -438,3 +439,61 @@ enum Ticket {
 fn main(){
 
 }
+=======
+
+// impl Colors {
+//     fn print(&self){
+//         match self {
+//             Colors::Red => println!("red"),
+//             Colors::Blue => println!("Blue"),
+//             Colors::White => println!("White"),
+
+//         }
+//     }
+// }
+
+// struct Persons {
+//     age: i32,
+//     name: String,
+//     fa_color: Colors,
+// }
+
+// impl Persons {
+//     fn print(&self){
+//         println!("{:?},{:?}",self.age,self.name);
+//         self.fa_color.print();
+//     }
+// }
+
+
+// fn main(){
+
+//     let person_init = vec![
+//         Persons {
+//             name: "Pich".to_owned(),
+//             age: 9,
+//             fa_color: Colors::Red,
+//         },
+
+//         Persons {
+//             name: "Hoang".to_owned(),
+//             age: 12,
+//             fa_color: Colors::Blue,
+//         },
+        
+//         Persons {
+//             name: "Tran".to_owned(),
+//             age: 4,
+//             fa_color: Colors::White,
+//         },
+//     ];
+
+//     for person in person_init {
+//         if person.age <= 10 {
+//             person.print();
+//         }
+//     }
+
+
+// }
+>>>>>>> eec8831b38a7e751cb56bad34d4425a9b57e91b4
