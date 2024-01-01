@@ -370,7 +370,6 @@
 //     Blue,
 //     White,
 // }
-<<<<<<< HEAD
 
 // impl Colors {
 //     fn print(&self){
@@ -439,7 +438,6 @@ enum Ticket {
 fn main(){
 
 }
-=======
 
 // impl Colors {
 //     fn print(&self){
@@ -496,4 +494,3 @@ fn main(){
 
 
 // }
->>>>>>> eec8831b38a7e751cb56bad34d4425a9b57e91b4
