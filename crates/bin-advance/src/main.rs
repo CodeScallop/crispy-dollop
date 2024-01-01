@@ -342,16 +342,25 @@
 //owner's string
 //borrowed string
 
-fn print_it(data: &str){
-    println!("{:?}",data);
-    
+// fn print_it(data: &str){
+//     println!("{:?}",data);
+// }
+
+struct Employee {
+    name: String,
+
 }
 
 fn main(){
     // print_it("data");
-    let owned_string = "owned string".to_owned();
-    let another_owned = String::from("another");
-    print_it(&owned_string);
-    print_it(&another_owned);
+    // let owned_string = "owned string".to_owned();
+    // let another_owned = String::from("another");
+    // print_it(&owned_string);
+    // print_it(&another_owned);
+    let emp = Employee {
+        // name:"Jayston".to_owned(), //1
+        name: String::from("Jayson"),
 
+    };
+    println!("{}",emp.name);
 }
