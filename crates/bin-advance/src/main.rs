@@ -219,20 +219,79 @@
 
 //impl in rust 
 
-struct Temperature {
-    degree: f64,
+// struct Temperature {
+//     degree: f64,
+// }
+
+
+
+// impl Temperature {
+//     fn display_temp(&self){
+//         println!("{:?}", self.degree);
+//     }
+// }
+
+// fn main(){
+//     let hot = Temperature{degree: 99.9};
+//     hot.display_temp();
+
+// }
+
+struct Dimensions {
+    width: f64,
+    height: f64,
+    depth: f64,
 }
 
+enum Color {
+    Red,
+    Blue,
+    White,
+}
 
+struct Box {
+    dimensions: Dimensions,
+    weight: f64,
+    color: Color,
 
-impl Temperature {
-    fn display_temp(&self){
-        println!("{:?}", self.degree);
+}
+
+impl Color {
+    fn print(&self){
+        match self{
+            Color::Blue => println!("Blue"),
+            Color::Red => println!("Red"),
+            Color::White => println!("White"),
+
+        }
+    }
+}
+
+impl Dimensions {
+    fn new(width: f64, height: f64, depth: f64) ->Self {
+        Self { width, height, depth }
+    }
+
+    fn print(&self){
+        println!("Depth: {:?}, Height: {:?}, Width: {:?}", self.depth, self.height, self.width)
+    }
+}
+
+impl Box {
+    fn new(dimensions: Dimensions, weight: f64, color: Color) ->Self {
+        Self { dimensions, weight, color }
+    }
+
+    fn print(&self){
+        self.color.print();
+        self.dimensions.print();
+        println!("{:?}", self.weight);
     }
 }
 
 fn main(){
-    let hot = Temperature{degree: 99.9};
-    hot.display_temp();
 
+    let dimensions = Dimensions::new(12.3,32.2,33.2);
+    let small_box = Box::new( dimensions,11.1, Color::Blue);
+    small_box.print();
 }
