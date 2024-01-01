@@ -429,36 +429,36 @@
 
 
 //enum advange
-enum Ticket {
-    Backstage(f64, String),
-    Vip(f64, String),
-    Standard(f64),
-}
+// enum Ticket {
+//     Backstage(f64, String),
+//     Vip(f64, String),
+//     Standard(f64),
+// }
 
-fn main(){
-    let tickets = vec![
-        Ticket::Backstage(12.2,"Te".to_owned()),
-        Ticket::Vip(15.2,"Tran".to_owned()),
-        Ticket::Standard(199.9),
+// fn main(){
+//     let tickets = vec![
+//         Ticket::Backstage(12.2,"Te".to_owned()),
+//         Ticket::Vip(15.2,"Tran".to_owned()),
+//         Ticket::Standard(199.9),
 
-    ];
+//     ];
 
-    //creating for a loop to print out ticket infor
+//     //creating for a loop to print out ticket infor
 
-    for ticket in tickets {
-        match ticket {
-            Ticket::Backstage(price,owner ) => {println!("Backstage: {:?}, Owner: {:?}",price, owner)
+//     for ticket in tickets {
+//         match ticket {
+//             Ticket::Backstage(price,owner ) => {println!("Backstage: {:?}, Owner: {:?}",price, owner)
 
-        },
-        Ticket::Vip(price,owner ) => {println!("Vip: {:?}, Owner: {:?}",price, owner)
+//         },
+//         Ticket::Vip(price,owner ) => {println!("Vip: {:?}, Owner: {:?}",price, owner)
             
-        },
-        Ticket::Standard(price ) => {println!("Backstage: {:?}",price)
+//         },
+//         Ticket::Standard(price ) => {println!("Backstage: {:?}",price)
             
-        }
-        }
-    }
-}
+//         }
+//         }
+//     }
+// }
 
 // impl Colors {
 //     fn print(&self){
@@ -515,3 +515,27 @@ fn main(){
 
 
 // }
+
+
+// enum Option<T>{
+//     Some<T>,
+// }
+
+struct Customer {
+    age: Option<i32>,
+    name: String,
+
+}
+
+fn main(){
+    let mark = Customer {
+        age: Some(22),
+        name: "test".to_owned(),
+    };
+
+    let becky = Customer {
+        age: None,
+        name: "tessttt".to_owned(),
+    };
+
+}
