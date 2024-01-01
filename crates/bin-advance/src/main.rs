@@ -299,7 +299,7 @@
 
 
 //vector
-fn main(){
+// fn main(){
     // let my_numbers = vec![1,2,3];
     // for num in my_numbers{
     //     println!("{:?}",num);
@@ -323,14 +323,35 @@ fn main(){
     // my_numbers.len();
     // println!("{:?}", my_numbers.len());
 
-        let numbers = vec![10,20,30,40];
-        for num in &numbers {
-            match num {
-                30 => {println!("Thisty");}
-                _ =>println!("{:?}", num)
-            }
+        // let numbers = vec![10,20,30,40];
+        // for num in &numbers {
+        //     match num {
+        //         30 => {println!("Thisty");}
+        //         _ =>println!("{:?}", num)
+        //     }
 
-        }
+        // }
 
+
+// }
+
+
+
+//string in rust 
+
+//owner's string
+//borrowed string
+
+fn print_it(data: &str){
+    println!("{:?}",data);
+    
+}
+
+fn main(){
+    // print_it("data");
+    let owned_string = "owned string".to_owned();
+    let another_owned = String::from("another");
+    print_it(&owned_string);
+    print_it(&another_owned);
 
 }
