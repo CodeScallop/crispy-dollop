@@ -300,10 +300,10 @@
 
 //vector
 fn main(){
-    let my_numbers = vec![1,2,3];
-    for num in my_numbers{
-        println!("{:?}",num);
-    }
+    // let my_numbers = vec![1,2,3];
+    // for num in my_numbers{
+    //     println!("{:?}",num);
+    // }
 
 
     // let mut my_numbers = Vec::new();    
@@ -323,8 +323,14 @@ fn main(){
     // my_numbers.len();
     // println!("{:?}", my_numbers.len());
 
+        let numbers = vec![10,20,30,40];
+        for num in &numbers {
+            match num {
+                30 => {println!("Thisty");}
+                _ =>println!("{:?}", num)
+            }
 
-
+        }
 
 
 }
