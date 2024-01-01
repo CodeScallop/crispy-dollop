@@ -195,23 +195,44 @@
 //     display_light(&dull);
 //     display_light(&dull);
 // }
-struct Grocery_item{
-    id: i32,
-    quantity: i32,
+// struct Grocery_item{
+//     id: i32,
+//     quantity: i32,
 
+// }
+
+// fn display_id(grocery: &Grocery_item){
+//     println!("{:?}", grocery.id)
+// }
+
+// fn display_quantity(grocery: &Grocery_item){
+//     println!("{:?}", grocery.quantity)
+// }
+
+// fn main(){
+//     let grocery = Grocery_item { id: {5}, quantity: {9} };
+//     display_id(&grocery);
+//     display_quantity(&grocery);
+
+// }
+
+
+//impl in rust 
+
+struct Temperature {
+    degree: f64,
 }
 
-fn display_id(grocery: &Grocery_item){
-    println!("{:?}", grocery.id)
-}
 
-fn display_quantity(grocery: &Grocery_item){
-    println!("{:?}", grocery.quantity)
+
+impl Temperature {
+    fn display_temp(&self){
+        println!("{:?}", self.degree);
+    }
 }
 
 fn main(){
-    let grocery = Grocery_item { id: {5}, quantity: {9} };
-    display_id(&grocery);
-    display_quantity(&grocery);
+    let hot = Temperature{degree: 99.9};
+    hot.display_temp();
 
 }
