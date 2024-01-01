@@ -436,7 +436,12 @@ enum Ticket {
 }
 
 fn main(){
+    let tickets = vec![
+        Ticket::Backstage(12.2,"Te".to_owned()),
+        Ticket::Vip(15.2,"Tran".to_owned()),
+        Ticket::Standard(12.2),
 
+    ];
 }
 
 // impl Colors {
