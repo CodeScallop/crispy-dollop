@@ -237,61 +237,89 @@
 
 // }
 
-struct Dimensions {
-    width: f64,
-    height: f64,
-    depth: f64,
-}
+// struct Dimensions {
+//     width: f64,
+//     height: f64,
+//     depth: f64,
+// }
 
-enum Color {
-    Red,
-    Blue,
-    White,
-}
+// enum Color {
+//     Red,
+//     Blue,
+//     White,
+// }
 
-struct Box {
-    dimensions: Dimensions,
-    weight: f64,
-    color: Color,
+// struct Box {
+//     dimensions: Dimensions,
+//     weight: f64,
+//     color: Color,
 
-}
+// }
 
-impl Color {
-    fn print(&self){
-        match self{
-            Color::Blue => println!("Blue"),
-            Color::Red => println!("Red"),
-            Color::White => println!("White"),
+// impl Color {
+//     fn print(&self){
+//         match self{
+//             Color::Blue => println!("Blue"),
+//             Color::Red => println!("Red"),
+//             Color::White => println!("White"),
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
-impl Dimensions {
-    fn new(width: f64, height: f64, depth: f64) ->Self {
-        Self { width, height, depth }
-    }
+// impl Dimensions {
+//     fn new(width: f64, height: f64, depth: f64) ->Self {
+//         Self { width, height, depth }
+//     }
 
-    fn print(&self){
-        println!("Depth: {:?}, Height: {:?}, Width: {:?}", self.depth, self.height, self.width)
-    }
-}
+//     fn print(&self){
+//         println!("Depth: {:?}, Height: {:?}, Width: {:?}", self.depth, self.height, self.width)
+//     }
+// }
 
-impl Box {
-    fn new(dimensions: Dimensions, weight: f64, color: Color) ->Self {
-        Self { dimensions, weight, color }
-    }
+// impl Box {
+//     fn new(dimensions: Dimensions, weight: f64, color: Color) ->Self {
+//         Self { dimensions, weight, color }
+//     }
 
-    fn print(&self){
-        self.color.print();
-        self.dimensions.print();
-        println!("{:?}", self.weight);
-    }
-}
+//     fn print(&self){
+//         self.color.print();
+//         self.dimensions.print();
+//         println!("{:?}", self.weight);
+//     }
+// }
 
+// fn main(){
+
+//     let dimensions = Dimensions::new(12.3,32.2,33.2);
+//     let small_box = Box::new( dimensions,11.1, Color::Blue);
+//     small_box.print();
+// }
+
+
+
+//vector
 fn main(){
+    // let my_numbers = vec![1,2,3];
+    let mut my_numbers = Vec::new();    
 
-    let dimensions = Dimensions::new(12.3,32.2,33.2);
-    let small_box = Box::new( dimensions,11.1, Color::Blue);
-    small_box.print();
+    my_numbers.push(1);
+    println!("{:?}", my_numbers);
+    my_numbers.push(2);
+    println!("{:?}", my_numbers);
+
+    my_numbers.push(3);
+    println!("{:?}", my_numbers);
+
+    my_numbers.pop();
+
+    println!("{:?}", my_numbers);
+
+    my_numbers.len();
+    println!("{:?}", my_numbers.len());
+
+
+
+
+
 }
