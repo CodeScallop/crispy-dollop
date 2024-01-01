@@ -300,23 +300,28 @@
 
 //vector
 fn main(){
-    // let my_numbers = vec![1,2,3];
-    let mut my_numbers = Vec::new();    
+    let my_numbers = vec![1,2,3];
+    for num in my_numbers{
+        println!("{:?}",num);
+    }
 
-    my_numbers.push(1);
-    println!("{:?}", my_numbers);
-    my_numbers.push(2);
-    println!("{:?}", my_numbers);
 
-    my_numbers.push(3);
-    println!("{:?}", my_numbers);
+    // let mut my_numbers = Vec::new();    
 
-    my_numbers.pop();
+    // my_numbers.push(1);
+    // println!("{:?}", my_numbers);
+    // my_numbers.push(2);
+    // println!("{:?}", my_numbers);
 
-    println!("{:?}", my_numbers);
+    // my_numbers.push(3);
+    // println!("{:?}", my_numbers);
 
-    my_numbers.len();
-    println!("{:?}", my_numbers.len());
+    // my_numbers.pop();
+
+    // println!("{:?}", my_numbers);
+
+    // my_numbers.len();
+    // println!("{:?}", my_numbers.len());
 
 
 
