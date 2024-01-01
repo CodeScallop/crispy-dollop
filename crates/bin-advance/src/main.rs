@@ -439,9 +439,25 @@ fn main(){
     let tickets = vec![
         Ticket::Backstage(12.2,"Te".to_owned()),
         Ticket::Vip(15.2,"Tran".to_owned()),
-        Ticket::Standard(12.2),
+        Ticket::Standard(199.9),
 
     ];
+
+    //creating for a loop to print out ticket infor
+
+    for ticket in tickets {
+        match ticket {
+            Ticket::Backstage(price,owner ) => {println!("Backstage: {:?}, Owner: {:?}",price, owner)
+
+        },
+        Ticket::Vip(price,owner ) => {println!("Vip: {:?}, Owner: {:?}",price, owner)
+            
+        },
+        Ticket::Standard(price ) => {println!("Backstage: {:?}",price)
+            
+        }
+        }
+    }
 }
 
 // impl Colors {
