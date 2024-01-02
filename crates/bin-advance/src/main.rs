@@ -595,9 +595,18 @@ fn find_quantity(name: &str) -> Option<i32>{
         GroceryItem {name: "Dragon".to_owned(), qty: 12},
 
     ];
+    for item in groceries{
+        if item.name == name {
+            return Some(item.qty);
+        }
+    }
+    None
+
 
 }
 
 fn main(){
+    let item = "Banana".to_owned();
+    find_quantity(&item);
 
 }
