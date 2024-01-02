@@ -521,21 +521,26 @@
 //     Some<T>,
 // }
 
-struct Customer {
-    age: Option<i32>,
-    name: String,
+// struct Customer {
+//     age: Option<i32>,
+//     name: String,
 
-}
+// }
 
-fn main(){
-    let mark = Customer {
-        age: Some(22),
-        name: "test".to_owned(),
-    };
+// fn main(){
+//     let mark = Customer {
+//         age: Some(22),
+//         name: "test".to_owned(),
+//     };
 
-    let becky = Customer {
-        age: None,
-        name: "tessttt".to_owned(),
-    };
+//     let becky = Customer {
+//         age: None,
+//         name: "tessttt".to_owned(),
+//     };
+//     match mark.age {
+//         Some(age) => println!("Customer is {}", age),
+//         None => println!("Customer are not provided"),
 
-}
+//     }
+
+// }
