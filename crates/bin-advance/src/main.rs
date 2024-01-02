@@ -612,5 +612,23 @@
 
 // }
 
+struct Student {
+    name: String,
+    locker: Option<i32>,
+
+
+}
+
 fn main(){
+    let mary = Student {
+        name: "Mary".to_owned(),
+        locker: None,
+
+    };
+    println!("Student {:?}", mary.name);
+    match mary.locker{
+        Some(num) => println!("Locker: {:?}", mary.locker),
+        None => println!("None"),
+    };
+
 }
