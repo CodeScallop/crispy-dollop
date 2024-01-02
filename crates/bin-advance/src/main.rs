@@ -616,7 +616,7 @@ struct Student {
     name: String,
     locker: Option<i32>,
 
-    Update
+    UpdateUpdate
 }
 
 fn main(){
