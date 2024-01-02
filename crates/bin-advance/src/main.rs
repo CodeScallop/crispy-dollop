@@ -582,6 +582,22 @@
 //     }
 // }
 
+
+struct GroceryItem {
+    name: String,
+    qty: i32,
+}
+
+fn find_quantity(name: &str) -> Option<i32>{
+    let groceries = vec![
+        GroceryItem {name: "Banana".to_owned(), qty: 4},
+        GroceryItem {name: "Tamoto".to_owned(), qty: 5},
+        GroceryItem {name: "Dragon".to_owned(), qty: 12},
+
+    ];
+
+}
+
 fn main(){
-    
+
 }
