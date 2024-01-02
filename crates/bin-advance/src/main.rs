@@ -606,7 +606,8 @@ fn find_quantity(name: &str) -> Option<i32>{
 }
 
 fn main(){
-    let item = "Banana".to_owned();
-    find_quantity(&item);
+    let name = "Banana".to_owned();
+    let qty = find_quantity(&name);
+    println!("{:?}",qty);
 
 }
