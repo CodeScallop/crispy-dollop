@@ -612,6 +612,6 @@
 
 // }
 
-fn main(){Updates
+fn main(){
 UpdatesUpdates
 }
